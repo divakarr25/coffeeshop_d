@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- project title -->
+    <title>coffee_d</title>
+    <!-- favorite icon -->
+    <link rel="shortcut icon" href="./assets/images/coffee-tum.png" type="image/x-icon">
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header></header> <!-- 1.parentContainer -->
+    <main></main> <!-- parentContainer -->
+
+
+
+    <footer> <!-- parentContainer -->
+        <div class="contacts componentSpacing"> <!-- 2.component -->
+            <div class="contactsContainer screenSize"> <!-- 3.componentContainer -->
+                <div class="contactsHeadingBody grid-1"> <!-- 4.row -->
+                    <div class="contactsHeadingBlock"> <!-- 5.column -->
+                        <div class="contactsHeadingBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <figure class="dflex">
+                                <img src="assets/images/heading img-Coffee shop.png"
+                                    alt="assets/images/2.bufferimg.png">
+                            </figure>
+                            <h2 class="dflex">contact us</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactsBody grid-2">
+                    <div class="contactsImageBlock"> <!-- 5.column -->
+                        <div class="contactsImageBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <figure>
+                                <img src="assets/images/8. contactimg.png" alt="assets/images/2.bufferimg.png">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="contactsFormBlock dflex"> <!-- 5.column -->
+                        <div class="contactsFormsBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+
+                            <body>
+                                <div class="booking-form dflex-col">
+                                    <h1>book a table</h1>
+                                    <form id="tableBookingForm ">
+                                        <div class="form-group">
+                                            <label for="name">Full Name:</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number:</label>
+                                            <input type="tel" id="phone" name="phone" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">Email Address:</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+
+                                        <button
+                                            style="background-color: rgba(95, 69, 55, 0.862); color: white; padding: 10px; border-radius: 5px;"
+                                            type="submit">Book Table</button>
+                                    </form>
+                                </div>
+
+                                <script>
+                                    document.getElementById('tableBookingForm').addEventListener('submit', function (event) {
+                                        event.preventDefault();
+                                        alert('Thank you for your reservation! We will contact you shortly to confirm.');
+                                        this.reset();
+                                    });
+                                </script>
+                            </body>
+                        </div>
+                    </div>
+                </div>
+                <div class="webLinksBody grid-4"> <!-- 4.row -->
+                    <div class="webMailBlock dflex"> <!-- 5.column -->
+                        <div class="webMailBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <i class="fa-solid fa-envelope"></i>
+                            <h2 class="dflex">our email</h2>
+                            <p class="dflex">shaakshi@gmail.com,
+                                hyhy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="webTimeBlock"> <!-- 5.column -->
+                        <div class="webTimeBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <i class="fa-solid fa-clock"></i>
+                            <h3 class="dflex">opening hours</h3>
+                            <p class="dflex">07:00am to 09:00pm</p>
+                        </div>
+                    </div>
+                    <div class="webLocationBlock"> <!-- 5.column -->
+                        <div class="webLocationBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="dflex">shop location</h3>
+                            <p class="dflex">mumbai, india- 400101</p>
+                        </div>
+                    </div>
+                    <div class="webNumberBlock"> <!-- 5.column -->
+                        <div class="webNumberBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <i class="fa-solid fa-mobile-button"></i>
+                            <h3 class="dflex">our number</h3>
+                            <p class="dflex">+91-123-456-7890
+                                +91-111-222-3333</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsBody grid-1"> <!-- 4.row -->
+                    <div class="rightsWebBlock"> <!-- 5.column -->
+                        <div class="rightsWebBox"> <!-- 6.subcolumn -->
+                            <!-- 7.contentContainer -->
+                            <p class="dflex">© copyright @ 2022 by <span>mr. web designer</span> | all rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
